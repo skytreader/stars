@@ -1,17 +1,25 @@
 var STAR_COUNT = 88;
 
 function getRandomInt(min, max){
-    var x = Math.floor(Math.random() * (max - min)) + min;
-    console.log(x);
-    return x;
+    return Math.floor(Math.random() * (max - min)) + min;
 }
 
 function createStar(r, c){
     var height = $(document).height();
     var width = $(document).width();
     var star = document.createElement("div");
+
+    var row = getRandomInt(0, height);
+    var col = getRandomInt(0, width);
+    var boxBlur = getRandomInt(0, 100);
+    var boxRadius = getRandomInt(0, boxBlur);
+
     $(star).addClass("star");
-    $(star).css({top: getRandomInt(0, height), left: getRandomInt(0, width)});
+    $(star).css({
+        top: row,
+        left: col,
+        "box-shadow": "0px 0px " + boxBlur + "px " + boxRadius + "px #fff"
+    });
     return star;
 }
 
