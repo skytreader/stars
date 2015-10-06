@@ -1,4 +1,4 @@
-var STAR_COUNT = 88;
+var STAR_COUNT = 888;
 
 function getRandomInt(min, max){
     return Math.floor(Math.random() * (max - min)) + min;
@@ -11,7 +11,7 @@ function createStar(r, c){
 
     var row = getRandomInt(0, height);
     var col = getRandomInt(0, width);
-    var boxBlur = getRandomInt(0, 100);
+    var boxBlur = getRandomInt(0, 10);
     var boxRadius = getRandomInt(0, boxBlur);
 
     $(star).addClass("star");
