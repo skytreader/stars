@@ -1,4 +1,4 @@
-var STAR_COUNT = 888;
+var STAR_COUNT = 1888;
 
 function getRandomInt(min, max){
     return Math.floor(Math.random() * (max - min)) + min;
