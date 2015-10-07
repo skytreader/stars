@@ -2,17 +2,12 @@ body{
     background: #000;
 }
 
+ul{
+    list-style: none;
+}
+
 .star{
-    width: 1px;
-    height: 1px;
-    background-color: #fff;
+    width: 2px;
+    height: 2px;
     position: absolute;
-    /*background-image: radial-gradient(center center, circle cover, #000, #fff);
-    background-image: -o-radial-gradient(center center, circle cover, #000, #fff);
-    background-image: -ms-radial-gradient(center center, circle cover, #000, #fff);
-    background-image: -moz-radial-gradient(center center, circle cover, #000, #fff);
-    background-image: -webkit-radial-gradient(center center, circle cover, #000, #fff);
-    box-shadow: 8px 8px 8px #fff;
-    -moz-box-shadow: 8px 8px 8px #fff;
-    -webkit-box-shadow: 8px 8px 8px #fff;*/
 }
